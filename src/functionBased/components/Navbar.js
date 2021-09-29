@@ -35,6 +35,7 @@ const Navbar = () => {
       </button>
       <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => {
+          const r = '';
           return (
             <li key={link.id}>
               <NavLink
