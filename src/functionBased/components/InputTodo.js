@@ -1,6 +1,6 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import React, { useState } from 'react';
-import { FaPlusCircle } from 'react-icons/fa';
+import { FaPlusCircle } from 'react-icons';
 
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({
@@ -21,8 +21,6 @@ const InputTodo = (props) => {
       setInputText({
         title: '',
       });
-    } else {
-      alert('Please write item');
     }
   };
 
