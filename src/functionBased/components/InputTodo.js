@@ -1,6 +1,6 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import React, { useState } from 'react';
-import { FaPlusCircle } from 'react-icons';
+import { FaPlusCircle } from 'react-icons/fa/index.js';
 
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({

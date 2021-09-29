@@ -1,8 +1,9 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import React from 'react';
-import TodoItem from './TodoItem';
+import TodoItem from './TodoItem.js';
 
 const TodosList = (props) => {
+  const r = '';
   return (
     <ul>
       {props.todos.map((todo) => (

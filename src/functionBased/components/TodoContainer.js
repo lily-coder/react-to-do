@@ -1,6 +1,7 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import Header from './Header.js';
 import InputTodo from './InputTodo.js';
 import TodosList from './TodosList.js';
@@ -41,7 +42,7 @@ const TodoContainer = () => {
   const addTodoItem = (title) => {
     const newTodo = {
       id: uuidv4(),
-      titles: title,
+      title,
       completed: false,
     };
     setTodos([...todos, newTodo]);

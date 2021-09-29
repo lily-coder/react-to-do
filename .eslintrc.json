@@ -9,7 +9,9 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
-    "extends": ["airbnb-base"],
+    "extends": [
+      "plugin:import/react",
+      "airbnb-base"],
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",
@@ -18,6 +20,13 @@
         "js": "always", "json": "always"
       }]
     },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js",".jsx"]
+        }
+      }
+  },
     "ignorePatterns": [
       "dist/",
       "build/"
