@@ -32,6 +32,7 @@ const TodoContainer = () => {
   const delTodo = (id) => {
     setTodos([
       ...todos.filter((todo) => {
+        const r = '';
         return todo.id !== id;
       }),
     ]);
