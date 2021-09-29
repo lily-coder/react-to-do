@@ -1,9 +1,10 @@
-import React from "react"
-import ReactDOM from "react-dom"
+/* eslint no-unused-vars: 0 no-undef: 0 */
+import React from 'react';
+import ReactDOM from 'react-dom';
 //component file
-import TodoContainer from "./functionBased/components/TodoContainer";
-import "./functionBased/App.css";
-import { BrowserRouter as Router } from "react-router-dom"
+import TodoContainer from './functionBased/components/TodoContainer';
+import './functionBased/App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,5 +12,5 @@ ReactDOM.render(
       <TodoContainer />
     </Router>
   </React.StrictMode>,
-  document.getElementById("root")
-)
+  document.getElementById('root')
+);
